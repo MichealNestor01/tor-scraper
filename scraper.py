@@ -1,5 +1,8 @@
 # Tor Web Scraper
+# python modules
 import sys
+from pywinauto import Application
+# our modules
 from modules.scrapeURL import scrapeURL
 from modules.txtFileHandler import TXTHandler
 from modules.csvFileHandler import CSVHandler
@@ -14,6 +17,7 @@ USAGEMESSAGE = "USAGE: \"python scraper.py mode args...\"\nsupported modes:\n\tc
 
 # main coordinates the program
 def main(args):
+    # validate args
     if len(args) < 3:
         print(USAGEMESSAGE)
         return 0;
@@ -21,8 +25,12 @@ def main(args):
     if not (mode in MODES.keys()):
         print(USAGEMESSAGE)
         return 0;
+    # RUN TOR 
+    app = Application(backend="win32").start(r"./Tor Browser/Browser/firefox.exe")
     # run the relevant mode's function
     MODES[f"{mode}"](args[2])
+    # CLOSE TOR
+    app.kill()
 
 if __name__ == "__main__":
     main(sys.argv)
