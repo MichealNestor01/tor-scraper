@@ -30,7 +30,7 @@ def main(args):
     # run the relevant mode's function
     MODES[f"{mode}"](args[2])
     # CLOSE TOR
-    app.kill()
+    app.kill() #This does not work for some reason
 
 if __name__ == "__main__":
     main(sys.argv)
