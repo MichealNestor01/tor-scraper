@@ -5,3 +5,4 @@ Tor Browser/
 geckodriver.exe
 geckodriver.log
 *__pycache__
+testdata/
