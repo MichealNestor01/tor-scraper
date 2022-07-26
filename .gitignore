@@ -1,0 +1,7 @@
+environment/
+htmldata/
+screenshots/
+Tor Browser/
+geckodriver.exe
+geckodriver.log
+*__pycache__
