@@ -17,25 +17,25 @@ Now run setup.py to create the necessary directories: </br>
 
 You will also need tor browser installed in this directory. Your file tree should now look like this: </br>
 tor-scraper </br>
--    yourVirtualEnvironmentName (folder) </br>
--    Tor Browser (folder) </br>
--    htmldata (folder) </br>
--    screenshots (folder) </br>
--    modules (folder) </br>
--    scraper.py (file) </br>
--    requirements.txt </br>
+    yourVirtualEnvironmentName (folder) </br>
+    Tor Browser (folder) </br>
+    htmldata (folder) </br>
+    screenshots (folder) </br>
+    modules (folder) </br>
+    scraper.py (file) </br>
+    requirements.txt </br>
 
 Finally you will need to install geckodriver from: https://github.com/mozilla/geckodriver/releases </br>
 and place it in the top directory of this repository so that your file tree looks like this: </br>
 tor-scraper </br>
--    yourVirtualEnvironmentName (folder) </br>
--    Tor Browser (folder) </br>
--    htmldata (folder) </br> 
--    screenshots (folder) </br>
--    modules (folder) </br>
--    geckodriver.exe (file) </br>
--    scraper.py (file) </br>
--    requirements.txt </br>
+    yourVirtualEnvironmentName (folder) </br>
+    Tor Browser (folder) </br>
+    htmldata (folder) </br> 
+    screenshots (folder) </br>
+    modules (folder) </br>
+    geckodriver.exe (file) </br>
+    scraper.py (file) </br>
+    requirements.txt </br>
 
 ==== USAGE GUIDE ==== 
 
