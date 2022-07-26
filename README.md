@@ -1,11 +1,41 @@
-This readme is for the first commit
+This is a program that provides screenshots and the source code of any site that it is given. 
+It passes all requests through the tor network so these sites can be .onion sites. 
 
-added extra line for test
+===== SETUP GUIDE =====
 
-added third line for testing branch merge
+How to install python dependencies:
+1. Create a python virtual environment:
+    "python -m venv yourVirtualEnvironmentName"
+2. Activate this environment, (do this every time you want to run the code)
+    (BASH AND ALL UNIX BASED SYSTEMS): "source yourVirtualEnvironmentName/Scripts/activate"
+    (Windows): "yourVirtualEnvironmentName\Scripts\activate"
+3. Install the dependencies:
+    "pip install -r requirements.txt"
 
-added fourth line to master
+Now run setup.py to create the necessary directories:
+    "python setup.py"
 
-fith line added by micheal working branch
+You will also need tor browser installed in this directory. Your file tree should now look like this:
+tor-scraper
+    yourVirtualEnvironmentName (folder)
+    Tor Browser (folder)
+    htmldata (folder)
+    screenshots (folder)
+    modules (folder)
+    scraper.py (file)
+    requirements.txt
 
-sixth line added by leonie
+Finally you will need to install geckodriver from: https://github.com/mozilla/geckodriver/releases
+and place it in the top directory of this repository so that your file tree looks like this: 
+tor-scraper
+    yourVirtualEnvironmentName (folder)
+    Tor Browser (folder)
+    htmldata (folder)
+    screenshots (folder)
+    modules (folder)
+    geckodriver.exe (file)
+    scraper.py (file)
+    requirements.txt
+
+==== USAGE GUIDE ====
+TO DO 
