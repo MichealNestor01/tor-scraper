@@ -13,7 +13,7 @@ How to install python dependencies:
     "pip install -r requirements.txt"
 
 Now run setup.py to create the necessary directories: </br>
-    "python setup.py"
+"python setup.py"
 
 You will also need tor browser installed in this directory. Your file tree should now look like this: </br>
 tor-scraper </br>
@@ -39,4 +39,13 @@ tor-scraper </br>
 
 ==== USAGE GUIDE ==== 
 
-TO DO 
+USAGE: python scraper.py MODE args... </br>
+
+To use the scraper with a single URL: </br>
+"python scraper.py url YOUR_URL" </br>
+
+To use the scraper with a txt file full of url's: </br>
+"python scraper.py txt FILENAME.txt" </br>
+
+To use the scraper with a csv file full of url's: </br>
+"python scraper.py csv FILENAME.csv" </br>
