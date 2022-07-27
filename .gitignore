@@ -6,3 +6,5 @@ geckodriver.exe
 geckodriver.log
 *__pycache__
 testdata/
+olddkr
+startup_script.sh
