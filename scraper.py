@@ -1,9 +1,6 @@
 # Tor Web Scraper
 # python modules
 import sys
-import os
-from time import sleep
-from pywinauto import Application
 # our modules
 from modules.scrapeURL import scrapeURL
 from modules.txtFileHandler import TXTHandler
@@ -30,12 +27,12 @@ def main(args):
         return 0;
     # check if tor is running:
     # RUN TOR 
-    app = Application(backend="win32").start(r"./Tor Browser/Browser/firefox.exe")
-    sleep(1) # give tor a second to launch
+    #app = Application(backend="win32").start(r"./Tor Browser/Browser/firefox.exe")
+    #sleep(1) # give tor a second to launch
     # run the relevant mode's function
     MODES[f"{mode}"](args[2])
     # CLOSE TOR
-    os.system("TASKKILL /F /IM firefox.exe") # app does not kill so I use this nuclear option
+    #os.system("TASKKILL /F /IM firefox.exe") # app does not kill so I use this nuclear option
     #app.kill() #This does not work for some reason
 
 if __name__ == "__main__":
